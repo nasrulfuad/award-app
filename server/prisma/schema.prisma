@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    String  @id @default(uuid())
+  email String  @unique
+  name  String?
+
+  @@map(name: "users")
+}
+
+enum AwardType {
+  VOUCHER
+  PRODUCT
+  GIFT_CARD
+}
+
+model Award {
+  id        String    @id @default(uuid())
+  name      String    @db.VarChar(100)
+  type      AwardType
+  point     Int
+  image     String    @db.VarChar(255)
+  createdAt DateTime  @default(now())
+
+  @@map(name: "awards")
+}

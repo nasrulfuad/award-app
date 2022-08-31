@@ -1,0 +1,91 @@
+@import "~antd/dist/antd.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+#header {
+  padding: 0 10px;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  box-shadow: 3px 6px 22px 3px rgba(208, 216, 243, 0.6);
+}
+
+#sider {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 15;
+}
+.content__container {
+  transition: all 0.2s;
+}
+
+.content__wrapper {
+  margin: 85px 20px 0 20px;
+  overflow: initial;
+}
+
+.content__subWrapper {
+  padding: 24px;
+  min-height: 360px;
+  background-color: #fff;
+  position: relative;
+}
+
+.page__loader {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.w__100 {
+  width: 100%;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.d__block {
+  display: block;
+}
+
+.table-row__light {
+  background-color: #ffffff;
+}
+.table-row__dark {
+  background-color: #fbfbfb;
+}
